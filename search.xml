@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[hive函数]]></title>
-    <url>%2F2019%2F02%2F13%2Fhive%E5%87%BD%E6%95%B0%2F</url>
-    <content type="text"><![CDATA[什么是hive1print(&apos;hello world&apos;);]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hive函数</title>
+      <link href="/2019/02/13/hive%E5%87%BD%E6%95%B0/"/>
+      <url>/2019/02/13/hive%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<p>什么是hive<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;hello world&apos;);</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
       <categories>
-        <category>hive</category>
+          
+          <category> hive </category>
+          
       </categories>
-      <tags>
-        <tag>hive </tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[安装hive]]></title>
-    <url>%2F2019%2F02%2F13%2F%E5%AE%89%E8%A3%85hive%2F</url>
-    <content type="text"></content>
+      
+      
+        <tags>
+            
+            <tag> hive  </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安装hive</title>
+      <link href="/2019/02/13/%E5%AE%89%E8%A3%85hive/"/>
+      <url>/2019/02/13/%E5%AE%89%E8%A3%85hive/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
       <categories>
-        <category>hive</category>
+          
+          <category> hive </category>
+          
       </categories>
-  </entry>
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
