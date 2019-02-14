@@ -2152,7 +2152,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #86296e;
+  background: #fcf920;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3391,5 +3391,16 @@ pre {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 body {
+  background: url("/images/background.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: #000;
+}
+.content-wrap,
+.sidebar {
+  opacity: 0.98 !important;
+}
+.header-inner {
+  background: rgba(255,255,255,0.98) !important;
 }
