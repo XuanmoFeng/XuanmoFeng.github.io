@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: "Linux Biolinum", sans-serif;
+  font-family: 'Noto Serif SC', "Linux Biolinum", sans-serif;
 }
 h2,
 h3,
@@ -493,7 +493,7 @@ pre,
 }
 pre,
 code {
-  font-family: consolas, Menlo, "Linux Biolinum", sans-serif, monospace;
+  font-family: 'Noto Serif SC', consolas, Menlo, "Linux Biolinum", sans-serif, monospace;
 }
 code {
   padding: 2px 4px;
@@ -1141,7 +1141,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 20px;
   font-weight: normal;
-  font-family: "Linux Biolinum", sans-serif;
+  font-family: 'Noto Serif SC', "Linux Biolinum", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1230,7 +1230,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: "Linux Biolinum", sans-serif;
+  font-family: 'Noto Serif SC', "Linux Biolinum", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1508,7 +1508,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: "Linux Biolinum", sans-serif;
+  font-family: 'Noto Serif SC', "Linux Biolinum", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -2152,7 +2152,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb69f;
+  background: #e02236;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3395,6 +3395,9 @@ body {
 }
 .container {
   background-color: rgba(41,41,41,0.8);
+}
+.posts-expand .post-title-link {
+  color: #000;
 }
 .header-inner {
   background: #fff !important;
