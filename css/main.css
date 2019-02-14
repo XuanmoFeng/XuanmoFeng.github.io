@@ -2152,7 +2152,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff165;
+  background: #f1ec2b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3394,7 +3394,7 @@ body {
   color: #000;
 }
 .container {
-  background-color: rgba(41,41,41,0.8);
+  background-color: rgba(41,41,41,0.85);
 }
 .posts-expand .post-title-link {
   color: #000;
@@ -3405,6 +3405,8 @@ body {
 .site-author-name,
 .site-state-item-name,
 .site-state-item-count,
-.site-description {
+.site-description,
+.site-subtitle,
+.menu .menu-item a {
   font-family: Noto Serif SC;
 }
