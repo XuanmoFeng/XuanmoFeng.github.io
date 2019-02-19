@@ -511,7 +511,7 @@
 <p>本文章翻译来自<a href="https://data-flair.training" target="_blank" rel="noopener">Data-flair</a></p>
 </blockquote>
 <hr>
-<h2 id="1-目标-Apache-Hive教程"><a href="#1-目标-Apache-Hive教程" class="headerlink" title="1.目标 - Apache Hive教程"></a>1.目标 - Apache Hive教程</h2><p>Apache Hive是一个基于Hadoop Haused构建的开源数据仓库系统，用于查询和分析存储在Hadoop文件中的大型数据集。它在Hadoop中处理结构化和半结构化数据。<br>这个Apache Hive教程详细介绍了Apache Hive和Hive历史的基础知识。在这个配置单元教程中，我们将了解Hive的需求及其特性。此Hive指南还介绍了Hive体系结构的内部结构、Hive功能和Apache Hive的缺点。<br>那么，让我们开始Apache Hive教程。</p>
+<h2 id="1-目标"><a href="#1-目标" class="headerlink" title="1.目标"></a>1.目标</h2><p>Apache Hive是一个基于Hadoop Haused构建的开源数据仓库系统，用于查询和分析存储在Hadoop文件中的大型数据集。它在Hadoop中处理结构化和半结构化数据。<br>这个Apache Hive教程详细介绍了Apache Hive和Hive历史的基础知识。在这个配置单元教程中，我们将了解Hive的需求及其特性。此Hive指南还介绍了Hive体系结构的内部结构、Hive功能和Apache Hive的缺点。<br>那么，让我们开始Apache Hive教程。</p>
 <h2 id="2-什么是Hive"><a href="#2-什么是Hive" class="headerlink" title="2.什么是Hive?"></a>2.什么是Hive?</h2><p>Apache Hive是一个基于Hadoop Haused构建的开源数据仓库系统，用于查询和分析存储在Hadoop文件中的大型数据集。<br>最初，你必须编写复杂的  Map-Reduce作业，但现在在Hive的帮助下，你只需要提交SQL查询。Hive主要针对熟悉SQL的用户。Hive使用称为HiveQL（HQL）的语言，它类似于SQL。HiveQL自动将类似SQL的查询转换为MapReduce作业。<br>Hive抽象了Hadoop的复杂性。需要注意的主要事情是没有必要为Hive学习java。<br>Hive通常在您的工作站上运行，并将您的SQL查询转换为一系列作业，以便在Hadoop集群上执行。Apache Hive将数据组织到表中。这提供了一种将结构附加到存储在HDFS中的数据的方法。</p>
 <h2 id="3-Hive的历史"><a href="#3-Hive的历史" class="headerlink" title="3. Hive的历史"></a>3. Hive的历史</h2><p>Facebook数据基础架构团队开发了Hive。Apache Hive也是用于满足Facebook要求的技术之一。它非常受Facebook内部所有用户的欢迎。它被用于在具有数百个用户的群集上运行数千个作业，用于各种应用程序。<br>Facebook上的Apache Hive-Hadoop集群存储了超过2PB的原始数据。它每天定期加载15TB的数据。<br>现在它被亚马逊，IBM，雅虎，Netflix，金融业监管局（FINRA）等许多公司使用和开发。</p>
 <h2 id="4-为什么选择Hive"><a href="#4-为什么选择Hive" class="headerlink" title="4.为什么选择Hive?"></a>4.为什么选择Hive?</h2><p>让我们现在讨论Hive的需求 -<br>Facebook在实施Apache Hive之前遇到了很多挑战。生成的数据大小等挑战增加或爆炸，使得处理它们变得非常困难。传统的RDBMS无法应对压力。因此，Facebook正在寻找更好的选择。为了解决这个问题，Facebook最初尝试使用MapReduce。但它在SQL编程和强制知识方面存在困难，使其成为一种不切实际的解决方案。因此，Apache Hive允许他们克服他们所面临的挑战。<br>使用Apache Hive，他们现在可以执行以下操作：</p>
@@ -552,11 +552,11 @@
 <li>使用HiveQL不需要任何编程语言知识，基本SQL查询知识就足够了。</li>
 <li>我们可以使用Hive在Hadoop中轻松处理结构化数据。</li>
 <li>在Hive中查询非常简单，因为它与SQL类似。</li>
-<li><p>我们还可以使用Hive为数据分析运行Ad-hoc查询。</p>
+<li>我们还可以使用Hive为数据分析运行Ad-hoc查询。</li>
+</ul>
 <h2 id="8-Apache-Hive的限制"><a href="#8-Apache-Hive的限制" class="headerlink" title="8. Apache Hive的限制"></a>8. Apache Hive的限制</h2><p>Hive具有以下限制</p>
-</li>
-<li><p>Apache不提供实时查询和行级更新。</p>
-</li>
+<ul>
+<li>Apache不提供实时查询和行级更新。</li>
 <li>Hive还为交互式数据浏览提供可接受的延迟。</li>
 <li>这对在线交易处理来说并不好。</li>
 <li>Apache Hive查询的延迟通常非常高。</li>
