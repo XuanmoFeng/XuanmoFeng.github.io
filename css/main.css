@@ -2152,7 +2152,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #01ee5e;
+  background: #4e7a6c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3392,9 +3392,10 @@ pre {
 }
 body {
   color: #000;
+  font-size: 16px;
 }
 .container {
-  background-color: rgba(41,41,41,0.85);
+  background-color: rgba(41,41,41,0.97);
 }
 .posts-expand .post-title-link {
   color: #000;
