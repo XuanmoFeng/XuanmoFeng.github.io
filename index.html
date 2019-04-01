@@ -539,84 +539,64 @@
 <li>b.Hive 元数据</li>
 </ul>
 <p>基本上，为了存储表，数据库，表中的列，它们的数据类型和HDFS映射的模式或元数据，它选择相应的数据库服务器。</p>
-<p>c.HiveQL执行引擎</p>
+<ul>
+<li>c.HQL处理引擎</li>
+</ul>
 <p>另外，我们可以说HiveQL与SQL相同。特别是，用于查询Metastore上的架构信息。此外，对于MapReduce程序，它是传统方法的替代品之一。此外，我们可以编写MapReduce作业的查询并处理它，而不是用Java编写MapReduce程序。</p>
-<p>d。执行引擎</p>
-<p>虽然，Hive Execution Engine是HiveQL流程Engine和MapReduce的结合部分。执行引擎处理查询并生成与MapReduce结果相同的结果。此外，它使用MapReduce的味道。</p>
-<p>即 HDFS或HBase</p>
-<p>基本上，将数据存储到文件系统Hadoop分布式文件系统或HBase是数据存储技术。</p>
-<p>请点击此链接，了解更多关于蜂巢结构及零部件  详细</p>
-<ol start="6">
-<li>Hive如何工作？<br>Hive教程 - 下图描绘了Hive和Hadoop之间的工作流程。</li>
-</ol>
+<ul>
+<li>d.执行引擎</li>
+</ul>
+<p>虽然，Hive Execution Engine是HiveQL流程Engine和MapReduce的结合部分。执行引擎处理查询并生成与MapReduce结果相同的结果。</p>
+<ul>
+<li>e.HDFS或HBase</li>
+</ul>
+<p>Hadoop分布式文件系统或HBASE是将数据存储到文件系统中的数据存储技术。</p>
+<h2 id="6-Hive如何工作？"><a href="#6-Hive如何工作？" class="headerlink" title="6. Hive如何工作？"></a>6. Hive如何工作？</h2><p>Hive教程 - 下图描绘了Hive和Hadoop之间的工作流程。</p>
 <p>Apache Hive<br>Apache Hive教程 - Hive的工作</p>
 <p>下表定义了Hive如何与Hadoop框架交互。</p>
-<p>步骤1执行查询</p>
+<p>第1步:执行查询</p>
 <p>最初，Hive接口（命令行或Web UI）将查询发送到Driver（任何数据库驱动程序，如JDBC，ODBC等）以执行。</p>
-<p>第2步获取计划</p>
+<p>第2步:获取计划</p>
 <p>然后，驱动程序借助查询编译器来解析查询，以检查语法和查询计划或查询的要求。</p>
-<p>第3步获取元数据</p>
+<p>第3步:获取元数据</p>
 <p>此外，编译器将元数据请求发送到Metastore（任何数据库）。</p>
-<p>步骤4发送元数据</p>
-<p>之后，Metastore将元数据作为对编译器的响应发送。</p>
-<p>第5步发送计划</p>
-<p>然后编译器检查需求并将计划重新发送到驱动程序。但是，查询的解析和编译已完成，直到此处。</p>
-<p>步骤6执行计划</p>
+<p>步骤4:发送元数据</p>
+<p>之后，Metastore将元数据作为对编译器的响应发送出去。</p>
+<p>第5步:发送计划</p>
+<p>然后编译器检查需求并将计划重新发送到驱动程序。到目前为止，查询的解析和编译已经完成。</p>
+<p>步骤6:执行计划</p>
 <p>此外，驱动程序将执行计划发送到执行引擎。</p>
-<p>步骤7执行作业</p>
+<p>步骤7:执行作业</p>
 <p>然后，执行作业的过程是内部的MapReduce作业。此外，执行引擎将作业发送到JobTracker，JobTracker位于名称节点中，并将此作业分配给位于数据节点中的TaskTracker。而且，查询在这里执行MapReduce作业。</p>
-<p>元数据操作<br>在执行期间，执行引擎可以使用Metastore执行元数据操作。</p>
-<p>步骤8获取结果</p>
+<ul>
+<li>元数据操作<br>在执行期间，执行引擎可以使用Metastore执行元数据操作。</li>
+</ul>
+<p>步骤8:获取结果</p>
 <p>执行结束时，执行引擎从Data节点接收结果。</p>
-<p>第9步发送结果</p>
+<p>第9步:发送结果</p>
 <p>获取结果后，执行引擎会将这些结果值发送给驱动程序。</p>
-<p>第10步发送结果</p>
+<p>第10步:发送结果</p>
 <p>最后，驱动程序将结果发送到Hive接口。</p>
-<p>7.蜂巢的特点<br>在Hive教程的这一部分中，我们研究了Apache Hive功能。那么，让我们讨论所有 -</p>
-<p>最好的功能是以更简单的方式提供数据汇总，查询和分析。<br>但是，为了在不实际存储在HDFS中的情况下处理数据，Hive支持外部表。<br>而且，它完全符合Hadoop的低级接口要求。<br>此外，为了提高性能，它支持在表级别对数据进行分区。<br>在优化逻辑计划方面，Hive有一个基于规则的优化器。<br>Hive本质上是可扩展的，熟悉的和可扩展的。<br>对于使用HiveQL知识的基本SQL查询就足够了。我们不需要任何编程语言知识。<br>通过使用Hive，可以在Hadoop中处理结构化数据。<br>与SQL一样，Hive使查询变得非常简单。<br>通过使用Hive，可以为数据分析运行Ad-hoc查询<br>8.蜂巢的限制<br>Apache Hive教程讨论了Hive的以下限制。我们来讨论所有 -</p>
-<p>我们无法使用Hive执行实时查询。此外，它不提供行级更新。<br>此外，对于交互式数据浏览，Hive提供可接受的延迟。<br>另外，我们可以说Hive不是在线交易处理的正确选择。<br>虽然涉及延迟，但对于Hive查询，延迟通常非常高。<br> 学习如何在Hive中详细开发数据模型。</p>
-<ol start="9">
-<li>Apache Hive教程 - 用法<br>在这里，我们将看看以下Hive用法。</li>
-</ol>
-<p>我们使用Hive for Schema灵活性和进化。<br>此外，Apache Hive中的分区和桶表也是可能的。<br>此外，我们可以使用JDBC / ODBC驱动程序，因为它们在Hive中可用。</p>
-<ol start="10">
-<li>Hive vs Spark SQL<br>Apache Hive</li>
-</ol>
-<p>在Apache Hive教程的这一部分中，我们将详细比较Hive与Spark SQL。<br>一个。初始发行</p>
-<p>Apache Hive<br>蜂巢于2012年首次发布。</p>
-<p>Spark SQL<br>而Spark SQL于2014年首次发布<br>.b。当前版本</p>
-<p>Apache Hive<br>目前于2017年11月18日发布：版本2.3.2</p>
-<p>Spark SQL<br>目前于2017年10月9日发布：版本2.1.2<br>c。开发人员</p>
-<p>Apache Hive<br>Facebook最初开发了它。进一步捐赠给Apache软件基金会，从那以后一直保持着它。</p>
-<p>Spark SQL<br>Apache Software Foundation最初开发了它。<br>d。服务器操作系统</p>
-<p>Apache Hive<br>但是，对于Java VM，它支持所有操作系统。</p>
-<p>Spark SQL<br>Spark SQL支持许多操作系统。例如Linux OS，X和Windows。<br>即 数据类型</p>
-<p>Apache Hive<br>它获得了预定义的数据类型。例如，浮动或日期。<br>详细了解有关Hive数据类型的更多信息</p>
-<p>Spark SQL<br>与Spark SQL一样，它也可以获得预定义的数据类型。例如，浮点数或日期。<br>F。支持SQL</p>
-<p>Apache Hive<br>基本上，它拥有类似SQL的DML和DDL语句。</p>
-<p>Spark SQL<br>与Hive一样，它也拥有类似SQL的DML和DDL语句。<br>学习完整的比较，点击链接，Apache Hive vs Spark SQL：功能明智的比较 </p>
-<p>Hadoop测验</p>
-<ol start="11">
-<li>Pig vs Hive vs Hadoop MapReduce<br>Apache Hive<br>Apache Hive教程 - Pig vs Hive vs Hadoop MapReduce</li>
-</ol>
-<p>在Apache Hive教程的这一部分中，获得Pig vs Hive与Hadoop Mapreduce的完全区别。<br>一个。语言</p>
-<p>蜂巢<br>它有像Query语言一样的SQL。</p>
-<p>MapReduce的<br>还有，编译语言。</p>
-<p>猪<br>它有脚本语言。<br>湾 抽象化</p>
-<p>蜂巢<br>它具有低水平的抽象。</p>
-<p>MapReduce的<br>此外，具有高水平的抽象。</p>
-<p>猪<br>它具有高水平的抽象。<br>C。代码行</p>
-<p>蜂巢<br>相对较少没有。MapReduce和Pig的代码行。</p>
-<p>MapReduce的<br>它有更多代码。</p>
-<p>猪<br>相对较少没有。来自MapReduce的代码行。<br>d。发展努力</p>
-<p>蜂巢<br>MapReduce和Pig的开发工作相对较少。</p>
-<p>MapReduce的<br>涉及更多的开发工作。</p>
-<p>猪<br>相对较少的开发努力。<br>即 代码效率</p>
-<p>蜂巢<br>代码效率相对较低。</p>
-<p>MapReduce的<br>它具有很高的代码效率。</p>
-<p>猪<br>代码效率相对较低。<br>让我们详细修改Hive Operators。</p>
-<p>所以，这一切都在Apache Hive教程中。希望你喜欢我们的解释。</p>
-<p>12.结论 - Hive教程<br>因此，在这个Apache Hive教程中，我们已经看到了Apache Hive的概念。它包括Hive架构，Hive的局限性，优势，Hive需要的原因，Hive History，Hive vs Spark SQL以及Pig vs Hive vs Hadoop MapReduce。但是，如果您不得不询问有关此Apache Hive教程的任何查询，请随时通过评论部分询问。<br>另请参阅 - 最佳Apache Hive Books</p>
+<h2 id="7-Hive的特点"><a href="#7-Hive的特点" class="headerlink" title="7.Hive的特点"></a>7.Hive的特点</h2><p>在Hive教程的这一部分中，我们研究了Apache Hive特点。如下:</p>
+<ul>
+<li>最好的功能是以更简单的方式提供数据汇总，查询和分析。</li>
+<li>但是，为了在不实际存储在HDFS中的情况下处理数据，Hive支持外部表。</li>
+<li>而且，它完全符合Hadoop的低级接口要求。</li>
+<li>此外，为了提高性能，它支持在表级别对数据进行分区。</li>
+<li>在优化逻辑计划方面，Hive有一个基于规则的优化器。</li>
+<li>Hive本质上是可扩展的，熟悉的和可扩展的。</li>
+<li>对于使用HiveQL知识的基本SQL查询就足够了。我们不需要任何编程语言知识。</li>
+<li>通过使用Hive，可以在Hadoop中处理结构化数据。</li>
+<li>与SQL一样，Hive使查询变得非常简单。</li>
+<li>通过使用Hive，可以为数据分析运行Ad-hoc查询</li>
+</ul>
+<h2 id="8-Hive的限制"><a href="#8-Hive的限制" class="headerlink" title="8.Hive的限制"></a>8.Hive的限制</h2><p>Apache Hive教程讨论了Hive的以下限制。我们来讨论所有 -</p>
+<ul>
+<li>我们无法使用Hive执行实时查询。此外，它不提供行级更新。</li>
+<li>此外，对于交互式数据浏览，Hive提供可接受的延迟。</li>
+<li>另外，我们可以说Hive不是在线交易处理的正确选择。</li>
+<li>虽然涉及延迟，但对于Hive查询，延迟通常非常高。</li>
+</ul>
 
           
         
